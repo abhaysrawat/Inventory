@@ -2,93 +2,161 @@
 	pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-<c:set var="contextRoot" value="${pageContext.request.contextPath}" />
-
 
 <spring:url var="css" value="/resources/css" />
 <spring:url var="js" value="/resources/js" />
 <spring:url var="images" value="/resources/images" />
-
+<c:set var="contextRoot" value="${pageContext.request.contextPath}" />
 
 
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
 
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<title>Manali General Store-${title}</title>
-<script>
-	window.menu = '${title}';
-</script>
+    <title>Business Frontpage - Start Bootstrap Template</title>
 
-<!-- Bootstrap Core CSS -->
-<link href="${css}/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="${css}/bootstrap.min.css" rel="stylesheet">
 
-<!-- Custom CSS -->
-<link href="${css}/myapp.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="${css}/myapp.css" rel="stylesheet">
 
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  </head>
 
-</head>
+  <body>
 
-<body>
- 		${greeting }
-	<%-- <div class="wrapper">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Start Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-		<!-- Navigation -->
-		<%@include file="./all/navbar.jsp"%>>
+    <!-- Header with Background Image -->
+    <header class="business-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="display-3 text-center text-white mt-4">Business Name or Tagline</h1>
+          </div>
+        </div>
+      </div>
+    </header>
 
-		<!-- Page Content -->
+    <!-- Page Content -->
+    <div class="container">
 
-		<div class="content">
-			<!-- Loading the Home Content -->
-			<c:if test="${userClickHome==true}">
-				<%@ include file="home.jsp"%>
-			</c:if>
+      <div class="row">
+        <div class="col-sm-8">
+          <h2 class="mt-4">What We Do</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
+          <p>
+            <a class="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a>
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <h2 class="mt-4">Contact Us</h2>
+          <address>
+            <strong>Start Bootstrap</strong>
+            <br>3481 Melrose Place
+            <br>Beverly Hills, CA 90210
+            <br>
+          </address>
+          <address>
+            <abbr title="Phone">P:</abbr>
+            (123) 456-7890
+            <br>
+            <abbr title="Email">E:</abbr>
+            <a href="mailto:#">name@example.com</a>
+          </address>
+        </div>
+      </div>
+      <!-- /.row -->
 
+      <div class="row">
+        <div class="col-sm-4 my-4">
+          <div class="card">
+            <img class="card-img-top" src="http://placehold.it/300x200" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Find Out More!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 my-4">
+          <div class="card">
+            <img class="card-img-top" src="http://placehold.it/300x200" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus totam ut praesentium aut.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Find Out More!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 my-4">
+          <div class="card">
+            <img class="card-img-top" src="http://placehold.it/300x200" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Find Out More!</a>
+            </div>
+          </div>
+        </div>
 
-			<!-- Load only when user clicks About -->
-			<c:if test="${userClickAbout==true}">
-				<%@ include file="about.jsp"%>
-			</c:if>
+      </div>
+      <!-- /.row -->
 
-			<!-- Load only when user clicks Contact -->
-			<c:if test="${userClickContact==true}">
-				<%@ include file="contact.jsp"%>
-			</c:if>
-			
-			<!-- Load only when user clicks View all Products -->
-			<c:if test="${userClickAllProducts==true or userClickCategoryProducts == true}">
-				<%@ include file="listProducts.jsp"%>
-			</c:if>
+    </div>
+    <!-- /.container -->
 
-		</div>
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
 
-		<!-- Footer Comes Here -->
-		<%@include file="./all/footer.jsp"%>
+    <!-- Bootstrap core JavaScript -->
+    <script src="${js}/jquery.js"></script>
+    <script src="${js}/bootstrap.bundle.min.js"></script>
 
-
-		<!-- jQuery -->
-		<script src="${js}/jquery.js"></script>
-
-		<!-- Bootstrap Core JavaScript -->
-		<script src="${js}/bootstrap.min.js"></script>
-
-		<!-- Self Coded JS -->
-		<script src="${js}/myapp.js"></script>
-
-	</div> --%>
-</body>
+  </body>
 
 </html>

@@ -1,0 +1,122 @@
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ @abhaysrawat Sign out
+0
+0 0 abhineet1729/online-store
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights
+online-store/onlinestore/src/main/webapp/assets/css/myapp.css
+481583e  4 days ago
+@abhineet1729 abhineet1729 Commit Sept 27
+    
+93 lines (62 sloc)  1.08 KB
+/*!
+ * Start Bootstrap - Shop Homepage (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+html {
+	height=100%;
+}
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    height:100%; /*added*/
+}
+
+.slide-image {
+    width: 100%;
+}
+
+.carousel-holder {
+    margin-bottom: 30px;
+}
+
+.carousel-control,
+.item {
+    border-radius: 4px;  
+}
+
+.caption {
+    height: 130px;
+    overflow: hidden;
+}
+
+.caption h4 {
+    white-space: nowrap;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #d17581;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
+}
+
+footer {
+    margin: 0;
+}
+
+/*
+	custom-styling
+*/
+
+.wrapper{
+	min-height:100%;
+	position:relative;
+}
+
+.content{
+	padding-bottom:60px; /*height of the footer*/
+}
+
+.footer{
+	position:absolute;
+	bottom:15px;
+	height:60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+© 2018 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Press h to open a hovercard with more details.
