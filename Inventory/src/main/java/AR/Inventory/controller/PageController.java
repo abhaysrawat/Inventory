@@ -4,8 +4,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-/*import Inventory.storebackend.dao.CategoryDAO;
-import Inventory.storebackend.dto.Category;*/
 
 @Controller
 public class PageController 
@@ -19,18 +17,35 @@ public class PageController
 	{
 		
 		ModelAndView mv= new ModelAndView("page"); 
-		mv.addObject("greeting","Welcome asdf");
-		
+		mv.addObject("title","Home");
+		mv.addObject("userClickHome",true);	
 /*		//passing the list of categories
 		mv.addObject("categories",categoryDAO.list());
 		mv.addObject("userClickHome",true);	*/
 		return mv;
 	}
 
-	
+	@RequestMapping(value="/track")
+	public ModelAndView track() 
+	{
 		
+		ModelAndView mv= new ModelAndView("page"); 
+		mv.addObject("title","Track");
+		mv.addObject("userClickTrack",true);	
+		return mv;
+	}	
+		
+	@RequestMapping(value="/rules")
+	public ModelAndView title() 
+	{
+		
+		ModelAndView mv= new ModelAndView("page"); 
+		mv.addObject("title","Rules");
+		mv.addObject("userClickRules",true);	
+		return mv;
+	}
 	
-/*	@RequestMapping(value="/about")
+	@RequestMapping(value="/about")
 	public ModelAndView about() 
 	{
 		
@@ -45,17 +60,14 @@ public class PageController
 	{
 		
 		ModelAndView mv= new ModelAndView("page");
-		//System.out.println("Hello");
 		mv.addObject("title","Contact Us");
 		mv.addObject("userClickContact",true);	
-		return mv;//
+		return mv;
 	}
 	
-	
-	 * Methods to load all the products based on category
 	 
 	
-	@RequestMapping(value="/show/all/products")
+/*	@RequestMapping(value="/show/all/products")
 	public ModelAndView showAllProducts() 
 	{
 		
@@ -84,5 +96,7 @@ public class PageController
 		mv.addObject("categories",categoryDAO.list());
 		mv.addObject("category",category); 
 		mv.addObject("userClickCategoryProducts",true);	
-		return mv;*/
-	}
+		return mv;
+	}*/
+	
+}
