@@ -20,6 +20,9 @@
     <meta name="author" content="">
 
     <title>Manali General Store</title>
+      
+    <script>window.menu= '${title}' </script>
+	<script src="${js}/myapp.js"></script>
 
     <!-- Bootstrap core CSS -->
     <link href="${css}/bootstrap.min.css" rel="stylesheet">
@@ -61,6 +64,8 @@
     <!-- Bootstrap core JavaScript -->
     <script src="${js}/jquery.js"></script>
     <script src="${js}/bootstrap.bundle.min.js"></script>
+
+    
 
   </body>
 

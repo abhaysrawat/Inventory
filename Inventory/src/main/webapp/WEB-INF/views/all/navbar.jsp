@@ -16,7 +16,7 @@
 <header>
 <div class="container">
 <div class="clearfix">
-<div class="logo"><a href="/home/"><img alt="logo" style="width:50%" src="${images}/SS.ico"></a></div>
+<div class="logo"><a href="/Inventory/home"><img alt="logo" style="width:50%" src="${images}/SS.ico"></a></div>
 <a href="#" class="navbar-menu"><span></span><span></span><span></span></a>
 <div class="search-box">
 <form id="search-form" method="get" action="/srch">
@@ -27,11 +27,11 @@
 </div>
 <nav>
 <ul class="main-navigation">
-<li><a href="/Inventory/home" title="Go to Home">Home</a></li>
-<li><a href="/Inventory/track" title="Track">Track</a></li>
-<li><a href="/Inventory/rules" title="Rules">Rules</a></li>
-<li><a href="/Inventory/contact" title="Contact ">Contact Us</a></li>
-<li><a href="/Inventory/about" title="About us">About Us</a></li>
+<li id="home"><a href="/Inventory/home" title="Go to Home">Home</a></li>
+<li id="track"><a href="/Inventory/track" title="Track">Track</a></li>
+<li id="rules"><a href="/Inventory/rules" title="Rules">Rules</a></li>
+<li id="contact"><a href="/Inventory/contact" title="Contact ">Contact Us</a></li>
+<li id="about"><a href="/Inventory/about" title="About us">About Us</a></li>
 </ul>
 </nav>
 </div>

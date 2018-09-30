@@ -13,7 +13,7 @@ public class PageController
 	
 	
 	@RequestMapping(value= {"/","/home","/index"})
-	public ModelAndView index() 
+	public ModelAndView home() 
 	{
 		
 		ModelAndView mv= new ModelAndView("page"); 
@@ -36,7 +36,7 @@ public class PageController
 	}	
 		
 	@RequestMapping(value="/rules")
-	public ModelAndView title() 
+	public ModelAndView rules() 
 	{
 		
 		ModelAndView mv= new ModelAndView("page"); 
